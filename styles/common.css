@@ -1,0 +1,100 @@
+/* Firefox */
+html {scrollbar-width: 10px;scrollbar-color: #222 #f1f1f1;}
+/* Opera */
+html::-o-scrollbar {width: 10px;}/*스크롤바 크기*/
+html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+html::-o-scrollbar-thumb:hover {background-color: #555;}
+/* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 10px;}/*스크롤바 크기*/
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}/*스크롤바 배경*/
+::-webkit-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+::-webkit-scrollbar-thumb:hover {background-color: #2559DF;}
+/* header */
+header {width: 1440; margin:0 auto;
+    background:url(/images/header_bg.jpg) no-repeat; background-size: cover;  background-position: bottom; }
+header .event_top {
+    width:100%; text-align:center; background:#AADBE9;
+    padding:10px 0;
+    }
+header .event_top a {font-size: 1.333rem; font-weight: 500; color:#DC4040;}
+header #gnb {
+    
+}
+header #gnb .gnb_top {
+    width: 1340px; margin:0 auto;
+    display: flex; justify-content: space-between;
+    margin:10px auto;
+}
+header #gnb .gnb_top h1 {width: 200px;}
+header #gnb .gnb_top h1 a {}
+header #gnb .gnb_top h1 a img {width: 100%;}
+header #gnb .gnb_top .gnb_right {
+    display: flex; 
+}
+header #gnb .gnb_top .gnb_right li {}
+header #gnb .gnb_top .gnb_right li a {
+    border-right: 1px solid #222; padding: 0px 15px;
+    font-size:0.75rem; font-weight: 500;
+}
+header #gnb .gnb_top .gnb_right li a img {padding-right: 5px;}
+header #gnb .gnb_top .gnb_right .gnb_right_last {border-right: 0; padding-right:0;} /* nth로 해보기 */
+/* 메뉴 */
+header #gnb .gnb_btm {
+    width: 1340px; margin:0 auto;
+    display: flex; justify-content: space-between;
+}
+header #gnb .gnb_btm .gnb_left {
+    display: flex;
+    align-items: center;
+    
+}
+header #gnb .gnb_btm .gnb_left li {
+    padding-right: 50px; 
+}
+header #gnb .gnb_btm .gnb_left li #open_nav {
+    width: 30px; height: 40px;
+}
+header #gnb .gnb_btm .gnb_left li #open_nav a {}
+header #gnb .gnb_btm .gnb_left li #open_nav a img {width: 100%;}
+header #gnb .gnb_btm .gnb_left li a {font-weight: 500;}
+header #gnb .gnb_btm .gnb_right {display: flex; justify-content: space-between; align-items: center; }
+header #gnb .gnb_btm .gnb_right li {
+    padding-left: 10px; 
+}
+header #gnb .gnb_btm .gnb_right li #searchFrm {
+
+}
+header #gnb .gnb_btm .gnb_right li #searchFrm fieldset {
+    padding-bottom: 5px; border-bottom:1px solid #222; margin-right:10px;
+}
+header #gnb .gnb_btm .gnb_right li #searchFrm fieldset legend {}
+header #gnb .gnb_btm .gnb_right li #searchFrm fieldset #searchTxt {background:none; font-size: 0.75rem; font-weight: 500;}
+header #gnb .gnb_btm .gnb_right li #searchFrm fieldset #searchBtn {width: 20px; height: 20px;}
+header #gnb .gnb_btm .gnb_right li #searchFrm fieldset #searchBtn img {width: 80%;}
+header #gnb .gnb_btm .gnb_right li > a {width: 30px; height: 30px; }
+header #gnb .gnb_btm .gnb_right li a img {width: 80%; }
+/* 배너 */
+/* header .main_bnr {background: url(/images/main_1.jpg); width: ;} */
+header .main_bnr {
+    /* background: url(/images/main_2.jpg.png); */
+    position: relative; width: 1340px; margin: 0 auto; 
+}
+header .main_bnr .bnr_bg { /* background-size: cover; display: block; */}
+header .main_bnr .bnr_bg img {}
+
+header .main_bnr .bnr_info {/* background: url(/images/main_111.png); */ /* margin: 0 auto; */height: 600px;
+    color:#fff; letter-spacing: -0.02em; display: flex; flex-flow:column nowrap;
+    align-items:flex-start;
+    position: absolute; bottom: 259px; left:50px; 
+}
+header .main_bnr .bnr_info em {
+    font-size: 1.333rem; padding-bottom: 10px ; border-bottom:2px solid #fff; display: inline; background: red;
+}
+header .main_bnr .bnr_info p {font-size: 3.257rem; padding: 30px 0; background: red}
+header .main_bnr .bnr_info h2 {font-size: 4.5rem; font-weight: 700;}
+header .main_bnr .bnr_info span {
+    border-radius: 80px; padding: 20px 30px; border: 3px solid #fff; 
+   
+    margin-top: 50px;
+}
+header .main_bnr .bnr_info span a {font-size: 1.777rem; color:#fff; }
