@@ -3,17 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
     <title>피지오겔코리아</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- <link rel="stylesheet" href="./styles/responsive.css"> -->
 </head>
 <body>
     <header>
-        <div class="event_top"><a href="#">신규가입 10% | 카플친 추가 2천원 할인 쿠폰 지급</a></div>
+        <div class="event_top">
+            <a href="#">신규가입 10% | 카플친 추가 2천원 할인 쿠폰 지급</a>
+        </div>
+        <!-- 메뉴버튼 클릭 시 -->
+        <div id="open_nav">
+            <div class="nav_top">
+                <button id="nav_close" type="button"><img src="/images/icon/icon_close.png" alt="닫기"></button>
+                <p><img src="/images/logo.png" alt="PHYSIOGEL"></p>
+            </div>
+            <div class="menu">
+                <div class="nav_section">
+                    <h1><a href="#">브랜드소개</a></h1></div>
+                <div class="nav_section"> <!-- 클릭시 메뉴 -->
+                    <h1><a href="#">전체 카테고리</a></h1>
+                    <p><img src="/images/icon/icon_down.png" alt=""></p>
+                    <div class="section1">
+                        <a href="#">사용단계별<img src="/images/icon/icon_down.png" alt=""></a>
+                        <div class="s1-1">
+                            <a href="#">클렌징</a>
+                            <a href="#">엠플, 세럼</a>
+                            <a href="#">토너, 로션</a>
+                            <a href="#">크림</a>
+                            <a href="#">바디, 핸드, 립, 샴푸</a>
+                            <a href="#">마스크</a>
+                            <a href="#">쿠션, 파운데이션</a>
+                            <a href="#">썬케어</a>
+                            <a href="#">피지오겔 베스트</a>
+                        </div>
+                    </div>
+                    <div class="section1">
+                        <a href="#">제품라인별<p><img src="/images/icon/icon_down.png" alt=""></p></a>
+                        <div class="s1-1">
+                            <a href="#">DMT</a>
+                            <a href="#">DMT PRO-85</a>
+                            <a href="#">AI</a>
+                            <a href="#">사이언수티컬즈</a>
+                            <a href="#">시카밸런스</a>
+                            <a href="#">DMT 베이비</a>
+                            <a href="#">맨즈</a>
+                        </div>
+                    </div>
+                    <div class="section1">
+                        <a href="#">선물하기<p><img src="/images/icon/icon_down.png" alt=""></p></a>
+                        <div class="s1-1">
+                            <a href="#">공식몰 스페셜 선물</a>
+                            <a href="#">베이비 GIFT</a>
+                            <a href="#">남성 GIFT</a>
+                        </div>
+                    </div>
+                    <div class="section1">
+                        <a href="#">병의원전용<p><img src="/images/icon/icon_down.png" alt=""></p></a>
+                        <div class="s1-1">
+                            <a href="#">PRO라인</a>
+                            <a href="#">병의원찾기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_section">
+                    <h1><a href="#">이벤트</a></h1>
+                </div>
+            </div>
+            <div class="nav_btm">
+                <a href="#">공지사항</a>
+                <a href="#">FAQ</a>
+                <a href="#">사용후기</a>
+                <a href="#">1:1문의</a>
+            </div>
+    </div>
         <div id="gnb">
             <div class="gnb_top">
                 <h1><a href="#"><img src="./images/logo.png" alt="PHYSIOGEL"></a></h1>
@@ -21,62 +88,22 @@
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">주문조회</a></li>
                     <li><a href="#">쿠폰/멤버십</a></li>
-                    <li><a href="#" class="gnb_right_last"><img src="./images/icon/icon_present.png" alt="">선물하기</a></li>
+                    <li></li>
                 </ul>
             </div>
             <div class="gnb_btm">
                 <div class="gnb_left">
-                    <div id="nav"><a href="#" class="nav_menu"></a></div>
+                    <div id="nav_menu">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+                    </div>
                     <a href="#">브랜드소개</a>
                     <a href="#">사용단계별</a>
                     <a href="#">제품라인별</a>
+                    <a href="#" class="menu_gift"><img src="./images/icon/icon_present.png" alt="">선물하기</a>
                     <a href="#">병의원전용</a>
-                    <a href="#">커뮤니티</a>
-                    <a href="#">이벤트</a>
-                </div>
-                <!-- 메뉴클릭 -->
-                <div id="open_nav">
-                    <div class="nav_top">
-                        <button id="nav_close" type="button"><img src="/images/icon/icon_close.png" alt="닫기"></button>
-                        <img src="/images/logo.png" alt="PHYSIOGEL">
-                    </div>
-                    <div class="nav_btm">
-                        <div class="nav_section">
-                            <a href="#">브랜드소개</a></div>
-                        <div class="nav_section"> <!-- 클릭시 메뉴 -->
-                            <전체 카테고리
-                            <img src="/images/icon/icon_down.png" alt=""></div>
-                            <div class="nav_all_1">
-                            <dl>
-                                <dt>사용단계별</dt>
-                                    <dd>클렌징</dd>
-                                    <dd>엠플, 세럼</dd>
-                                    <dd>토너, 로션</dd>
-                                    <dd>크림</dd>
-                                    <dd>바디, 핸드, 립, 샴푸</dd>
-                                    <dd>마스크</dd>
-                                    <dd>쿠션, 파운데이션</dd>
-                                    <dd>썬케어</dd>
-                                    <dd>피지오겔 베스트</dd>
-                                <dt>제품라인별</dt>
-                                    <dd>DMT</dd>
-                                    <dd>DMT PRO-85</dd>
-                                    <dd>AI</dd>
-                                    <dd>사이언수티컬즈</dd>
-                                    <dd>시카밸런스</dd>
-                                    <dd>DMT 베이비</dd>
-                                    <dd>맨즈</dd>
-                                <dt>선물하기</dt>
-                                    <dd>공식몰 스페셜 선물</dd>
-                                    <dd>베이비 GIFT</dd>
-                                    <dd>남성 GIFT</dd>
-                                <dt>병의원전용</dt>
-                                    <dd>PRO라인</dd>
-                                    <dd>병의원찾기</dd>
-                            </dl>
-                        </div>
-                    </div>
-                    </div>
+                    <a href="#">커뮤니티</a>                        <a href="#">이벤트</a>
                 </div>
                 <ul class="gnb_right">
                     <li>
@@ -84,7 +111,7 @@
                             <fieldset>
                                 <legend>검색양식</legend>
                                 <input type="text" placeholder="피지오겔 선케어 컬렉션" id="searchTxt">
-                                <button type="submit" id="searchBtn"><img src="./images/icon/icon_search.png" alt="검색"></button></a>
+                                <button type="submit" id="searchBtn"><img src="./images/icon/icon_search.png" alt="검색"></button>
                             </fieldset>
                         </form><!-- 새로고침하면 다른 검색어 -->
                     </li>
@@ -101,7 +128,210 @@
                 <h2>피지오겔 DMT</h2>
                 <span><a href="#">자세히보기   ></a></span>
             </div>
-        </div>
+        </div>            
     </header>
+    <main>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/s1.jpg" alt=""></a>
+                    <a href="#">피부 타입에 따라 골라쓰는 피지오겔 선케어 모음딜 (선크림, 선스틱, 선로션, 선쿠션)</a>
+                    <div class="price">
+                        <em>19%</em>
+                        <span>16,000원</span>
+                        <h2>12,900원</h2>
+                    </div>
+                    <div class="buy">
+                        <a href="#">바로구매</a>
+                        <a href="#"><img src="./images/icon/icon_cart.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/s2.png" alt=""></a>
+                    <a href="#">[피지오겔 탄력위크] 데일리뮨 항산화 앰플 특별세트</a>
+                    <div class="price">
+                        <em>30%</em>
+                        <span>83,000원</span>
+                        <h2>12,900원</h2>
+                    </div>
+                    <div class="buy">
+                        <a href="#">바로구매</a>
+                        <a href="#"><img src="./images/icon/icon_cart.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/s3.png" alt=""></a>
+                    <a href="#">[피지오겔 탄력위크] 데일리뮨 대용량 앰플 데이앤나잇 더블세트</a>
+                    <div class="price">
+                        <em>20%</em>
+                        <span>217,000원</span>
+                        <h2>12,900원</h2>
+                    </div>
+                    <div class="buy">
+                        <a href="#">바로구매</a>
+                        <a href="#"><img src="./images/icon/icon_cart.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <!-- <section class="best">
+            <div class="best_left">
+                <h1><em>Best</em><br>New<br>Promotion</h1>
+            </div> -->
+            <!-- <div class="best_right">
+                <div class="product">
+                    <h1><img src="./images/s1.jpg" alt=""></h1>
+                    <p>피부 타입에 따라 골라쓰는 피지오겔 선케어 모음딜 (선크림, 선스틱, 선로션, 선쿠션)</p>
+                    <div class="price">
+                        <em>19%</em>
+                        <span>16,000원</span>
+                        <h2>12,900원</h2>
+                    </div>
+                    <div class="buy">
+                        <h2>바로구매</h2>
+                        <p><img src="./images/icon/icon_cart.png" alt=""></p>
+                    </div>
+                </div>
+                <div class="product">
+                    <h1><img src="./images/s2.png" alt=""></h1>
+                    <p>[피지오겔 탄력위크] 데일리뮨 항산화 앰플 특별세트</p>
+                    <div class="price">
+                        <em>30%</em>
+                        <span>83,000원</span>
+                        <h2>12,900원</h2>
+                    </div>
+                    <div class="buy">
+                        <h2>바로구매</h2>
+                        <p><img src="./images/icon/icon_cart.png" alt=""></p>
+                    </div>
+                </div>
+                <div class="product">
+                    <h1><img src="./images/s3.png" alt=""></h1>
+                    <p>[피지오겔 탄력위크] 데일리뮨 대용량 앰플 데이앤나잇 더블세트</p>
+                    <div class="price">
+                        <em>20%</em>
+                        <span>217,000원</span>
+                        <h2>12,900원</h2>
+                    </div>
+                    <div class="buy">
+                        <h2>바로구매</h2>
+                        <p><img src="./images/icon/icon_cart.png" alt=""></p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- swiper-slide -->
+            <!-- <div class="swiper" id="adver_bnr">
+                <div class="swiper wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/s1.jpg" alt=""></a>
+                        <a href="#">피부 타입에 따라 골라쓰는 피지오겔 선케어 모음딜 (선크림, 선스틱, 선로션, 선쿠션)</a>
+                        <div class="price">
+                            <em>19%</em>
+                            <span>16,000원</span>
+                            <h2>12,900원</h2>
+                        </div>
+                        <div class="buy">
+                            <a href="#">바로구매</a>
+                            <a href="#"><img src="./images/icon/icon_cart.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/s2.png" alt=""></a>
+                        <a href="#">[피지오겔 탄력위크] 데일리뮨 항산화 앰플 특별세트</a>
+                        <div class="price">
+                            <em>30%</em>
+                            <span>83,000원</span>
+                            <h2>12,900원</h2>
+                        </div>
+                        <div class="buy">
+                            <a href="#">바로구매</a>
+                            <a href="#"><img src="./images/icon/icon_cart.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/s3.png" alt=""></a>
+                        <a href="#">[피지오겔 탄력위크] 데일리뮨 대용량 앰플 데이앤나잇 더블세트</a>
+                        <div class="price">
+                            <em>20%</em>
+                            <span>217,000원</span>
+                            <h2>12,900원</h2>
+                        </div>
+                        <div class="buy">
+                            <a href="#">바로구매</a>
+                            <a href="#"><img src="./images/icon/icon_cart.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div> -->
+            <!-- </div> -->
+
+        <!-- </section>
+        <section class="bnr">
+            <div class="bnr_top">
+                
+            </div>
+            <div class="bnr_btm">
+                <div class="bnr_left"></div>
+                <div class="bnr_right"></div>
+            </div>
+        </section>
+        <section class="review">
+            <div class="review_1"></div>
+            <div class="review_2"></div>
+            <div class="review_3"></div>
+            <div class="review_4"></div>
+            <div class="review_5"></div>
+        </section> -->
+    </main>
+    <footer>
+        <div class="award">
+            <a href="#"><img src="/images/award_1.png" alt=""></a>
+            <a href="#"><img src="/images/award_2.png" alt=""></a>
+            <a href="#"><img src="/images/award_3.png" alt=""></a>
+            <a href="#"><img src="/images/award_4.png" alt=""></a>
+            <a href="#"><img src="/images/award_5.png" alt=""></a>
+        </div>
+        <div class="info">
+            <h1><img src="./images/logo.png" alt=""></h1>
+            <h2>(주)엘지생활건강</h2>
+            <address>
+                대표자 이정애  |  사업자 등록번호 안내 [107-81-98143]  |  통신판매업 신고 제2011-서울종로-0190호 [사업자정보확인] 결제정보 보안확인<br>
+                전화 080-869-8999   |  팩스   |  주소 03184 서울특별시 종로구 새문안로 58 (신문로2가) LG광화문빌딩<br>
+                지생활건강. All rights reserved.  |  Hosting by 카페24(주)
+            </address>
+            <p>※ 모든 제작물의 저작권은 당사에 있으며, 무단 복제나 도용은 저작권법(97조 5항)에 의해 금지되어 있습니다. 이를 위반시 처벌을 받을 수 있습니다.<br>
+                안전거래를 위해 (주)이니시스의 구매안전(에스크로)에 가입하여 서비스를 제공하고있습니다. [가입확인]</p>
+        </div>
+        <div class="btm">
+            <div class="left">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">이용안내</a>
+            </div>
+            <div class="right">
+                <div class="siet">
+                    <select name="Brand Site" id="B_site">
+                        <option value="영어">Manyo Global</option>
+                        <option value="일본어">魔女工場</option>
+                    </select>
+                </div>
+                <div class="sns">
+                    <a href="#"><img src="./images/icon/sns_instagram.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/sns_youtube.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/sns_kakao.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./script/common.js"></script>
 </body>
 </html>

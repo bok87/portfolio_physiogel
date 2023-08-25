@@ -1,0 +1,93 @@
+/* main {
+}
+main .best {}
+main .best .best_left {}
+main .best .best_left h1 {}
+main .best .best_left h1 .em {}
+main .best .best_right {}
+main .best .best_right .product {}
+main .best .best_right .product h1 {}
+main .best .best_right .product h1 img {}
+main .best .best_right .product p {}
+main .best .best_right .product .price {}
+main .best .best_right .product .price em {}
+main .best .best_right .product .price span {}
+main .best .best_right .product .price  h2 {}
+main .best .best_right .product .buy {}
+main .best .best_right .product .buy h2 {}
+main .best .best_right .product .buy h2 p {}
+main .best .best_right .product .buy h2 p img {}
+ */
+
+/* swiper-slide */
+main {
+    /* position: relative;
+    height: 100%; */
+    
+}
+main .best {
+    /* background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0; */
+}
+main .best .best_left {}
+main .best #adver_bnr {
+    /* width: 100%;
+    height: 100%; */
+}
+
+.swiper-slide {
+    /* text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.swiper-slide img {
+    /* display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; */
+}
+
+
+html,
+body {
+    /* position: relative;
+    height: 100%; */
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

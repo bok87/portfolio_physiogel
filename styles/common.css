@@ -17,9 +17,51 @@ header .event_top {
     padding:10px 0;
     }
 header .event_top a {font-size: 1.333rem; font-weight: 500; color:#DC4040;}
-header #gnb {
-    
+/* 오픈네비 */
+header #open_nav {
+    width: 390px; margin:0; background: #D9D9D9;
 }
+/* 오픈네비 top */
+header #open_nav .nav_top {display: flex;}
+header #open_nav .nav_top #nav_close {
+    width: 30px; height: 30px;
+    padding
+}
+header #open_nav .nav_top #nav_close img {width: 100%;}
+header #open_nav .nav_top p {
+    width: 150px; height: 50px;
+}
+header #open_nav .nav_top p img {width: 100%;}
+/* 오픈네비 menu */
+header #open_nav .menu {}
+header #open_nav .menu .nav_section {
+    display: flex;
+}
+header #open_nav .menu .nav_section h1 {}
+header #open_nav .menu .nav_section h1 a {
+    font-size: 1.777rem;
+}
+header #open_nav .menu .nav_section p {}
+header #open_nav .menu .nav_section p img {}
+/* 오픈네비 menu - section1 */
+header #open_nav .menu .nav_section .section1 {
+}
+header #open_nav .menu .nav_section .section1 a {}
+header #open_nav .menu .nav_section .section1 > a {
+    font-size: 1.333rem; 
+}
+header #open_nav .menu .nav_section .section1 a img {}
+/* 오픈네비 menu - section1-1 */
+header #open_nav .menu .nav_section .section1 .s1-1 {}
+header #open_nav .menu .nav_section .section1 .s1-1 a {
+    /* font-size: 1rem;  */
+}
+/* 오픈네비 btm */
+header #open_nav .nav_btm {}
+header #open_nav .nav_btm a {}
+/* gnb */
+header #gnb {}
+/* gnb top */
 header #gnb .gnb_top {
     width: 1340px; margin:0 auto;
     display: flex; justify-content: space-between;
@@ -38,7 +80,7 @@ header #gnb .gnb_top .gnb_right li a {
 }
 header #gnb .gnb_top .gnb_right li a img {padding-right: 5px;}
 header #gnb .gnb_top .gnb_right .gnb_right_last {border-right: 0; padding-right:0;} /* nth로 해보기 */
-/* 메뉴 */
+/* gnb btm - 메뉴 */
 header #gnb .gnb_btm {
     width: 1340px; margin:0 auto;
     display: flex; justify-content: space-between;
@@ -48,15 +90,24 @@ header #gnb .gnb_btm .gnb_left {
     align-items: center;
     
 }
-header #gnb .gnb_btm .gnb_left li {
-    padding-right: 50px; 
-}
-header #gnb .gnb_btm .gnb_left li #open_nav {
+header #gnb .gnb_btm .gnb_left .nav_menu {
     width: 30px; height: 40px;
 }
-header #gnb .gnb_btm .gnb_left li #open_nav a {}
-header #gnb .gnb_btm .gnb_left li #open_nav a img {width: 100%;}
-header #gnb .gnb_btm .gnb_left li a {font-weight: 500;}
+header #gnb .gnb_btm .gnb_left .nav_menu .link1, header #gnb .gnb_btm .gnb_left .nav_menu .link2, header #gnb .gnb_btm .gnb_left .nav_menu .link3 {border:1px solid #000; display: block;}
+header #gnb .gnb_btm .gnb_left .nav_menu .link1 {
+    width: 30px;
+}
+header #gnb .gnb_btm .gnb_left .nav_menu .link1 {
+    width: 20px;
+}
+header #gnb .gnb_btm .gnb_left .nav_menu .link1 {
+    width: 30px;
+}
+header #gnb .gnb_btm .gnb_left a {
+    padding-right: 50px; font-weight: 500;
+}
+header #gnb .gnb_btm .gnb_left .menu_gift {}
+header #gnb .gnb_btm .gnb_left .menu_gift img {}
 header #gnb .gnb_btm .gnb_right {display: flex; justify-content: space-between; align-items: center; }
 header #gnb .gnb_btm .gnb_right li {
     padding-left: 10px; 
@@ -73,6 +124,7 @@ header #gnb .gnb_btm .gnb_right li #searchFrm fieldset #searchBtn {width: 20px; 
 header #gnb .gnb_btm .gnb_right li #searchFrm fieldset #searchBtn img {width: 80%;}
 header #gnb .gnb_btm .gnb_right li > a {width: 30px; height: 30px; }
 header #gnb .gnb_btm .gnb_right li a img {width: 80%; }
+
 /* 배너 */
 /* header .main_bnr {background: url(/images/main_1.jpg); width: ;} */
 header .main_bnr {
@@ -88,13 +140,12 @@ header .main_bnr .bnr_info {/* background: url(/images/main_111.png); */ /* marg
     position: absolute; bottom: 259px; left:50px; 
 }
 header .main_bnr .bnr_info em {
-    font-size: 1.333rem; padding-bottom: 10px ; border-bottom:2px solid #fff; display: inline; background: red;
+    font-size: 1.333rem; padding-bottom: 10px ; border-bottom:2px solid #fff; display: inline;
 }
-header .main_bnr .bnr_info p {font-size: 3.257rem; padding: 30px 0; background: red}
+header .main_bnr .bnr_info p {font-size: 3.257rem; padding: 30px 0;}
 header .main_bnr .bnr_info h2 {font-size: 4.5rem; font-weight: 700;}
 header .main_bnr .bnr_info span {
     border-radius: 80px; padding: 20px 30px; border: 3px solid #fff; 
-   
     margin-top: 50px;
 }
 header .main_bnr .bnr_info span a {font-size: 1.777rem; color:#fff; }
