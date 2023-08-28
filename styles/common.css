@@ -149,3 +149,11 @@ header .main_bnr .bnr_info span {
     margin-top: 50px;
 }
 header .main_bnr .bnr_info span a {font-size: 1.777rem; color:#fff; }
+
+main .best {
+    display: flex; justify-content: space-between;
+}
+main .best .best_left {}
+main .best .best_left h1 {}
+main .best .best_left h1 em {}
+main .best .best_.mySwiper {}
